@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\managementtaskexercice.Application\managementtaskexercice.Application.csproj" />
+    <ProjectReference Include="..\managementtaskexercice.Authentication\managementtaskexercice.Authentication.csproj" />
+    <ProjectReference Include="..\managementtaskexercice.Domain\managementtaskexercice.Domain.csproj" />
+    <ProjectReference Include="..\managementtaskexercice.Persistence\managementtaskexercice.Persistence.csproj" />
+    <ProjectReference Include="..\managementtaskexercice.Task\managementtaskexercice.Task.csproj" />
+  </ItemGroup>
+
+</Project>
